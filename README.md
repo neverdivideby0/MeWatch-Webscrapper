@@ -105,10 +105,20 @@ After downloading the videos using the Python script, you can convert them from 
    cd /path/to/your/bash/script
 
 Run the Script: Execute the script by typing:
-bash your_script_name.sh
+   ```bash
+   bash your_script_name.sh
+```
 Replace your_script_name.sh with the name of your Bash script.
-What It Does
-The script iterates through the downloaded .m3u8 files.
-It uses FFmpeg to convert each file into an .mp4 format.
-The script checks if each file exists before attempting conversion to avoid errors
+What It Does:
+- The script iterates through the downloaded .m3u8 files.
+- It uses FFmpeg to convert each file into an .mp4 format.
+- The script checks if each file exists before attempting conversion to avoid errors
+
+## Troubleshooting
+If you encounter any issues with the conversion, you may manually convert the files with this line of code in the terminal
+Rename the file names where needed
+```bash
+ffmpeg -protocol_whitelist file,http,https,tcp,tls,crypto -i "input_file.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 50 "output_file.mp4"
+
+
 
