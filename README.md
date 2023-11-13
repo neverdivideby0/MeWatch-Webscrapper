@@ -1,5 +1,11 @@
 # MeWatch-Webscrapper
 Created a MeWatch (Singaporean digital video on demand service brand owned by Mediacorp) Webscrapper and Video Converter (m3u8 -> mp4)
+[MeWatch](https://www.mewatch.sg) - Singaporean digital video on demand service by Mediacorp
+
+## Last Updated
+- **Date**: [2023-11-13]
+- **Changes**: Updated code to mark out customizable breakpoints
+
 
 ## Overview
 This repository contains scripts for web scraping, optimized for macOS using the Safari browser.
