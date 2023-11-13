@@ -91,3 +91,24 @@ Remember, these scripts are designed for educational purposes and should be used
   file_path = os.path.join('/Your/Custom/Path/Here', file_name)
 
 
+## Running the Scripts
+
+### Running the Python Script
+First, execute the Python script via Jupyter Notebook to download videos from MeWatch.
+
+
+### Running the Bash Script
+After downloading the videos using the Python script, you can convert them from `.m3u8` to `.mp4` using the provided Bash script.
+
+1. **Open Terminal**: Navigate to your terminal application.
+2. **Navigate to Script Location**: Use the `cd` command to go to the directory where your Bash script is located.
+   ```bash
+   cd /path/to/your/bash/script
+
+Run the Script: Execute the script by typing:
+bash your_script_name.sh
+Replace your_script_name.sh with the name of your Bash script.
+What It Does
+The script iterates through the downloaded .m3u8 files.
+It uses FFmpeg to convert each file into an .mp4 format.
+The script checks if each file exists before attempting conversion to avoid errors
